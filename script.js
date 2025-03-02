@@ -21,6 +21,7 @@ const four = document.getElementById('title-4').innerText;
 const five = document.getElementById('title-5').innerText;
 const six = document.getElementById('title-6').innerText;
 
+
 document.getElementById('complete-1').addEventListener('click', function () {
   alert('Board updated Successfully');
   const btnOne = document.getElementById('complete-1');
@@ -33,7 +34,7 @@ document.getElementById('complete-1').addEventListener('click', function () {
   document.getElementById('navNumber').innerText = navNumber + 1;
 
   let now = new Date();
-  let timeString = now.toLocaleTimeString();
+  let timeNow = now.toLocaleTimeString();
 
   const divTag = document.getElementById('history');
   const newElement = document.createElement('p');
@@ -47,7 +48,7 @@ document.getElementById('complete-1').addEventListener('click', function () {
     'mb-4'
   );
   newElement.innerHTML = `
-  <h1>You have Complete The Task ${one} ${timeString}</h1>
+  <h1>You have Complete The Task ${one} ${timeNow}</h1>
   `;
   divTag.appendChild(newElement);
 });
@@ -63,7 +64,7 @@ document.getElementById('complete-2').addEventListener('click', function () {
   document.getElementById('navNumber').innerText = navNumber + 1;
 
   let now = new Date();
-  let timeString = now.toLocaleTimeString();
+  let timeNow = now.toLocaleTimeString();
 
   const divTag = document.getElementById('history');
   const newElement = document.createElement('p');
@@ -77,7 +78,7 @@ document.getElementById('complete-2').addEventListener('click', function () {
     'mb-4'
   );
   newElement.innerHTML = `
-  <h1>You have Complete The Task ${two} ${timeString}</h1>
+  <h1>You have Complete The Task ${two} ${timeNow}</h1>
   `;
   divTag.appendChild(newElement);
 });
@@ -93,7 +94,7 @@ document.getElementById('complete-3').addEventListener('click', function () {
   document.getElementById('navNumber').innerText = navNumber + 1;
 
   let now = new Date();
-  let timeString = now.toLocaleTimeString();
+  let timeNow = now.toLocaleTimeString();
 
   const divTag = document.getElementById('history');
   const newElement = document.createElement('p');
@@ -107,7 +108,7 @@ document.getElementById('complete-3').addEventListener('click', function () {
     'mb-4'
   );
   newElement.innerHTML = `
-  <h1>You have Complete The Task ${three} ${timeString}</h1>
+  <h1>You have Complete The Task ${three} ${timeNow}</h1>
   `;
   divTag.appendChild(newElement);
 });
@@ -123,7 +124,7 @@ document.getElementById('complete-4').addEventListener('click', function () {
   document.getElementById('navNumber').innerText = navNumber + 1;
 
   let now = new Date();
-  let timeString = now.toLocaleTimeString();
+  let timeNow = now.toLocaleTimeString();
 
   const divTag = document.getElementById('history');
   const newElement = document.createElement('p');
@@ -137,7 +138,7 @@ document.getElementById('complete-4').addEventListener('click', function () {
     'mb-4'
   );
   newElement.innerHTML = `
-  <h1>You have Complete The Task ${four} ${timeString}</h1>
+  <h1>You have Complete The Task ${four} ${timeNow}</h1>
   `;
   divTag.appendChild(newElement);
 });
@@ -153,7 +154,7 @@ document.getElementById('complete-5').addEventListener('click', function () {
   document.getElementById('navNumber').innerText = navNumber + 1;
 
   let now = new Date();
-  let timeString = now.toLocaleTimeString();
+  let timeNow = now.toLocaleTimeString();
 
   const divTag = document.getElementById('history');
   const newElement = document.createElement('p');
@@ -167,7 +168,7 @@ document.getElementById('complete-5').addEventListener('click', function () {
     'mb-4'
   );
   newElement.innerHTML = `
-  <h1>You have Complete The Task ${five} ${timeString}</h1>
+  <h1>You have Complete The Task ${five} ${timeNow}</h1>
   `;
   divTag.appendChild(newElement);
 });
@@ -183,7 +184,7 @@ document.getElementById('complete-6').addEventListener('click', function () {
   document.getElementById('navNumber').innerText = navNumber + 1;
 
   let now = new Date();
-  let timeString = now.toLocaleTimeString();
+  let timeNow = now.toLocaleTimeString();
 
   const divTag = document.getElementById('history');
   const newElement = document.createElement('p');
@@ -197,7 +198,7 @@ document.getElementById('complete-6').addEventListener('click', function () {
     'mb-4'
   );
   newElement.innerHTML = `
-  <h1>You have Complete The Task ${six} ${timeString}</h1>
+  <h1>You have Complete The Task ${six} ${timeNow}</h1>
   `;
   divTag.appendChild(newElement);
   alert('Congratulations, you have complete all the tasks');
