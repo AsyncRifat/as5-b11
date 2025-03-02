@@ -1,5 +1,5 @@
 document.getElementById('question-task').addEventListener('click', function () {
-  window.location.href = './next-index.html';
+  window.location.href = 'next-index.html';
 });
 document.getElementById('clear-btn').addEventListener('click', function () {
   const history = document.getElementById('history');
@@ -12,7 +12,7 @@ makeColor.addEventListener('click', function (event) {
   document.body.style.backgroundColor = colors[color];
   const newColor = color + 1;
   const oneColor = newColor % colors.length;
-  color=oneColor
+  color = oneColor;
 });
 const one = document.getElementById('title-1').innerText;
 const two = document.getElementById('title-2').innerText;
